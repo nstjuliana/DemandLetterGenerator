@@ -1,6 +1,6 @@
 # Demand Letter Generator
 
-[![CI](https://github.com/YOUR_USERNAME/DemandLetterGenerator/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/DemandLetterGenerator/actions/workflows/ci.yml)
+[![CI](https://github.com/nstjuliana/DemandLetterGenerator/actions/workflows/ci.yml/badge.svg)](https://github.com/nstjuliana/DemandLetterGenerator/actions/workflows/ci.yml)
 
 AI-powered demand letter generation for law firms. Built with Next.js, Supabase, and Anthropic Claude.
 
@@ -26,7 +26,7 @@ AI-powered demand letter generation for law firms. Built with Next.js, Supabase,
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/DemandLetterGenerator.git
+   git clone https://github.com/nstjuliana/DemandLetterGenerator.git
    cd DemandLetterGenerator
    ```
 
