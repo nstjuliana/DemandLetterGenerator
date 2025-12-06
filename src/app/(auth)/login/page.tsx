@@ -1,18 +1,16 @@
 /**
  * @file page.tsx
  * @description Login page for user authentication.
- * Placeholder to be implemented with Supabase Auth.
+ * Uses LoginForm component with Supabase Auth integration.
  *
  * @exports default - Login page component
  */
 
-import Link from 'next/link'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { LoginForm } from '@/components/forms/login-form'
 
 /**
- * Login page component with email/password form placeholder.
+ * Login page component with email/password form.
  *
  * @returns Login page JSX
  */
@@ -23,28 +21,9 @@ export default function LoginPage() {
         <CardTitle className="text-2xl">Login</CardTitle>
         <CardDescription>Enter your email and password to sign in</CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4">
-        <div className="space-y-2">
-          <label htmlFor="email" className="text-sm font-medium">
-            Email
-          </label>
-          <Input id="email" type="email" placeholder="name@example.com" />
-        </div>
-        <div className="space-y-2">
-          <label htmlFor="password" className="text-sm font-medium">
-            Password
-          </label>
-          <Input id="password" type="password" />
-        </div>
-        <Button className="w-full">Sign In</Button>
-        <p className="text-center text-sm text-muted-foreground">
-          Don&apos;t have an account?{' '}
-          <Link href="/signup" className="text-primary underline-offset-4 hover:underline">
-            Sign up
-          </Link>
-        </p>
+      <CardContent>
+        <LoginForm />
       </CardContent>
     </Card>
   )
 }
-
